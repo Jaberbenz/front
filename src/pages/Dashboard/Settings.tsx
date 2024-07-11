@@ -17,11 +17,20 @@ const Settings: FunctionComponent = () => {
                 <div className={styles.content1}>
                   <span>Account</span>
                   <div className={styles.arrow}>
-                    <img
-                      className={styles.unionIcon}
-                      alt=""
-                      src="/union@2x.png"
-                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className={styles.size6}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
                   </div>
                 </div>
               </button>
@@ -29,11 +38,20 @@ const Settings: FunctionComponent = () => {
                 <div className={styles.content1}>
                   <span>Billing</span>
                   <div className={styles.arrow}>
-                    <img
-                      className={styles.unionIcon}
-                      alt=""
-                      src="/union@2x.png"
-                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className={styles.size6}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
                   </div>
                 </div>
               </button>
@@ -41,11 +59,20 @@ const Settings: FunctionComponent = () => {
                 <div className={styles.content1}>
                   <span>SSH Keys</span>
                   <div className={styles.arrow}>
-                    <img
-                      className={styles.unionIcon}
-                      alt=""
-                      src="/union@2x.png"
-                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className={styles.size6}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
                   </div>
                 </div>
               </button>

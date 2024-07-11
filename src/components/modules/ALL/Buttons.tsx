@@ -18,17 +18,13 @@ const Buttons: FunctionComponent<ButtonsProps> = ({
   state,
   onLanguageSelect,
   onFileUpload,
-  onSubmit
+  onSubmit,
 }) => {
+  const languages = ["Java", "Javascript", "Python", "PHP"];
 
-  const languages = [
-    "Java",
-    "Javascript",
-    "Python",
-    "PHP"
-  ];
-
-  const [selectedLanguage, setSelectedLanguage] = useState(languages ? languages[0] : "");
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    languages ? languages[0] : ""
+  );
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedLanguage(e.target.value);
     if (onLanguageSelect) {
@@ -38,7 +34,7 @@ const Buttons: FunctionComponent<ButtonsProps> = ({
 
   const handleFileUpload = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files ? e.target.files[0] : null;
-  
+
     if (file) {
       // Types MIME autorisés pour les fichiers d'archive
       const allowedMimeTypes = [
@@ -62,29 +58,19 @@ const Buttons: FunctionComponent<ButtonsProps> = ({
   let cardContent;
   switch (cardType) {
     case "logo-text":
-      cardContent= (
+      cardContent = (
         <button className={state ? styles.button_up : styles.button_down}>
           <div className={styles.textContainer}>
-            <img
-              className={styles.icon}
-              loading="lazy"
-              alt=""
-              src={src}
-            />
+            <img className={styles.icon} loading="lazy" alt="" src={src} />
             <div className={styles.cta}>{text}</div>
           </div>
         </button>
       );
       break;
     case "logo":
-      cardContent= (
+      cardContent = (
         <button className={state ? styles.button_up : styles.button_down}>
-          <img 
-            className={styles.icon}
-            loading="lazy"
-            alt=""
-            src={src}
-          />
+          <img className={styles.icon} loading="lazy" alt="" src={src} />
         </button>
       );
       break;
@@ -96,11 +82,12 @@ const Buttons: FunctionComponent<ButtonsProps> = ({
             onChange={handleChange}
             className={styles.dropdownSelect}
           >
-            {languages && languages.map((language) => (
-              <option key={language} value={language}>
-                {language}
-              </option>
-            ))}
+            {languages &&
+              languages.map((language) => (
+                <option key={language} value={language}>
+                  {language}
+                </option>
+              ))}
           </select>
         </div>
       );
@@ -123,25 +110,22 @@ const Buttons: FunctionComponent<ButtonsProps> = ({
       break;
     case "submit":
       cardContent = (
-        <div className={state ? styles.button_up : styles.button_down} >
+        <button
+          className={state ? styles.button_up : styles.button_down}
+          onClick={onSubmit}
+        >
           <div className={styles.textContainer}>
-            <button
-              type="button"
-              name={text}
-              value="Single Sign-On"
-              onClick={onSubmit}
-              className={styles.cta}
-            />
+            <div className={styles.cta}>{text}</div>
           </div>
-        </div>
+        </button>
       );
       break;
     case "submit-project":
       cardContent = (
-        <button 
+        <button
           className={state ? styles.button_up : styles.button_down}
           onClick={onSubmit}
-          >
+        >
           <div className={styles.textContainer}>
             <div className={styles.cta}>{text}</div>
           </div>
@@ -149,11 +133,11 @@ const Buttons: FunctionComponent<ButtonsProps> = ({
       );
       break;
     default:
-      cardContent= (
+      cardContent = (
         <button className={state ? styles.button_up : styles.button_down}>
-            <div className={styles.textContainer}>
-              <div className={styles.cta}>{text}</div>
-            </div>
+          <div className={styles.textContainer}>
+            <div className={styles.cta}>{text}</div>
+          </div>
         </button>
       );
   }
@@ -161,4 +145,3 @@ const Buttons: FunctionComponent<ButtonsProps> = ({
 };
 
 export default Buttons;
-
