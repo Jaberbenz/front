@@ -1,0 +1,97 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Ensure the dashboard takes the full height */
+  background-color: var(--palettes-midnight-ui-surface);
+  font-size: var(
+    --playfair-display-source-sans-pro-text-base-font-semibold-size
+  );
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-source-sans-pro-text-xs-font-semibold);
+}
+
+.serviceframeParent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: calc(
+    100% - 250px
+  ); /* Adjust the width considering the sidebar width */
+  height: 100%; /* Ensure the parent takes full height */
+}
+
+.serviceframe {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--palettes-midnight-ui-surface);
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Take up remaining space */
+  padding: 10%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+  width: 100%;
+  max-width: 1440px;
+  text-align: center;
+  font-size: var(--playfair-display-fira-sans-text-5xl-font-bold-size);
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-fira-sans-text-5xl-font-bold);
+}
+
+.cardsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--padding-xl);
+  gap: 24px 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1450px) {
+  .content {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .serviceframe {
+    padding-top: var(--padding-134xl);
+    padding-bottom: var(--padding-134xl);
+    box-sizing: border-box;
+  }
+
+  .serviceframeParent {
+    max-width: 100%;
+  }
+
+  .dashboard {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .serviceframe {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+
+  .serviceframe {
+    gap: var(--gap-xl);
+    padding-top: var(--padding-80xl);
+    padding-bottom: var(--padding-80xl);
+  }
+}

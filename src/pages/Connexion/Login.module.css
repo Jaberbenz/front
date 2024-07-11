@@ -1,0 +1,38 @@
+.hero,
+.heroInner,
+.login {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.heroInner {
+  /* flex: 1; */
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.hero {
+  height: 100vh;
+  padding: 30vh 50vh;
+
+  flex: 1;
+  box-sizing: border-box;
+  gap: var(--gap-29xl);
+  background-image: url(/public/images/hero1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: var(--playfair-display-lato-text-6xl-font-bold-size);
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-fira-sans-text-5xl-font-bold);
+}
+.login {
+  /* max-width: 100%; */
+  position: relative;
+  background-color: var(--palettes-midnight-ui-surface);
+  line-height: normal;
+  letter-spacing: normal;
+}

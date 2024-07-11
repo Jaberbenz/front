@@ -1,0 +1,93 @@
+.imageIcon {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  max-width: 260px; /* Ajout */
+  max-height: 260px; /* Ajout */
+}
+
+.addFrIcon1 {
+  height: 56px;
+  width: 56px;
+  position: relative;
+  object-fit: cover;
+  min-height: 56px;
+}
+
+
+.jobTitle,
+.name {
+  align-self: stretch;
+  position: relative;
+}
+
+.name {
+  width: auto;
+  line-height: 150%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.jobTitle {
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+  line-height: 160%;
+  color: var(--palettes-midnight-text-muted);
+}
+
+.cardProfile,
+.nameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Modification */
+  justify-content: center; /* Modification */
+}
+
+.nameParent {
+  width: auto; /* Modification */
+}
+
+.cardProfile {
+  width: auto; /* Modification */
+  margin-bottom: 20px; /* Ajout */
+  padding: 0 var(--padding-7xl-6) 0 var(--padding-7xl-7);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--playfair-display-fira-sans-text-lg-font-semibold-size);
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+}
+
+.imageLummiCategoryavata {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.imageLummiCategoryavata1 {
+    z-index: 1;
+}
+.image {
+    width: 56px;
+    height: 56px;
+    position: relative;
+    border-radius: var(--br-381xl);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.cardProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}

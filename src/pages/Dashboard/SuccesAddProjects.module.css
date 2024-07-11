@@ -1,0 +1,207 @@
+.heading1,
+.subheading {
+  align-self: stretch;
+  position: relative;
+  white-space: nowrap;
+}
+.heading1 {
+  margin: 0;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 800;
+  font-family: inherit;
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.subheading {
+  font-size: var(--playfair-display-fira-sans-text-lg-font-semibold-size);
+  line-height: 150%;
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+  color: var(--palettes-midnight-text-muted);
+}
+.content,
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  align-self: stretch;
+  gap: var(--gap-base);
+}
+.content {
+  width: 100%;
+  max-width: 1440px;
+}
+.blankLine,
+.inTheNext,
+.summary {
+  margin: 0;
+}
+.deploymentThe,
+.developmentLiteraly,
+.godHimself {
+  margin-bottom: 0;
+}
+.developmentLiteralyWhereY {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-lgi);
+}
+.cta,
+.inTheNextContainer {
+  position: relative;
+  line-height: 160%;
+}
+.cta {
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+  color: var(--palettes-midnight-text-default);
+  text-align: center;
+  display: inline-block;
+  min-width: 57px;
+}
+.textContainer {
+  cursor: pointer;
+  border: 0;
+  padding: 0 26px;
+  background-color: transparent;
+  border-radius: var(--br-5xs);
+  align-items: center;
+}
+.buttons,
+.submit,
+.textContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.buttons {
+  border-radius: var(--br-5xs);
+  background-color: var(--palettes-midnight-primary-default);
+  border: 1px solid var(--palettes-midnight-primary-default);
+  box-sizing: border-box;
+  align-items: center;
+  padding: var(--padding-3xs) var(--padding-lgi);
+  max-width: 150px;
+}
+.submit {
+  align-items: flex-start;
+}
+.cardsGrid,
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.cardsGrid {
+  justify-content: flex-start;
+  padding: var(--padding-xl);
+  gap: 37px;
+  text-align: left;
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+  color: #fff;
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+}
+.services {
+  align-self: stretch;
+  background-color: var(--palettes-midnight-ui-surface);
+  justify-content: center;
+  padding: 333.5px var(--padding-xl);
+  gap: var(--gap-21xl);
+  text-align: center;
+  font-size: var(--playfair-display-fira-sans-text-5xl-font-bold-size);
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-fira-sans-text-5xl-font-bold);
+}
+.divider {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--palettes-midnight-text-default);
+}
+.brandNameAll,
+.link,
+.link1,
+.link2 {
+  position: relative;
+  line-height: 160%;
+}
+.link,
+.link1,
+.link2 {
+  display: inline-block;
+  min-width: 90px;
+}
+.link1,
+.link2 {
+  min-width: 86px;
+}
+.link2 {
+  min-width: 121px;
+}
+.footerLinks {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-3xl-5);
+}
+.credits,
+.footerLinks,
+.row {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.row {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.credits {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--palettes-midnight-ui-surface);
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: var(--padding-5xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-lato-text-sm-font-regular);
+}
+.footer,
+.main,
+.succesAddProjects {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main {
+  flex: 1;
+  flex-direction: column;
+  max-width: calc(100% - 182px);
+}
+.succesAddProjects {
+  width: 100%;
+  position: relative;
+  background-color: var(--palettes-midnight-ui-surface);
+  flex-direction: row;
+  line-height: normal;
+  letter-spacing: normal;
+}
+

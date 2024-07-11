@@ -1,0 +1,106 @@
+.logoIcon {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.brandname,
+.navLabel {
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.buttons,
+.buttons1,
+.cta,
+.textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta {
+  position: relative;
+  font-size: var(--playfair-display-fira-sans-text-xs-font-regular-size);
+  line-height: 160%;
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+  color: var(--palettes-midnight-text-default);
+  text-align: center;
+  min-width: 59px;
+  white-space: nowrap;
+}
+
+.buttons,
+.buttons1,
+.textContainer {
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  padding: 0 var(--padding-9xs);
+}
+
+.buttons {
+  cursor: pointer;
+  border: 1px solid var(--palettes-midnight-text-default);
+  padding: var(--padding-xs) var(--padding-lgi);
+  background-color: transparent;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.buttons1 {
+  cursor: pointer;
+  border: 1px solid var(--palettes-midnight-primary-default);
+  padding: var(--padding-xs) var(--padding-lgi);
+  background-color: var(--palettes-midnight-primary-default);
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--palettes-midnight-ui-surface);
+  padding: var(--padding-5xs);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  row-gap: 20px;
+  text-align: left;
+  font-size: var(--playfair-display-source-sans-pro-text-base-font-semibold-size);
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-source-sans-pro-text-xs-font-semibold);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-xs);
+  font-size: var(--playfair-display-fira-sans-text-xs-font-regular-size);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.navlink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--padding-base);
+}

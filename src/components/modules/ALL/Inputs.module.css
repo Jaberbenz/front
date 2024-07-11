@@ -1,0 +1,39 @@
+.textContainer {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: auto;
+  padding: 0 var(--padding-9xs);
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+  color: var(--palettes-midnight-text-muted);
+  min-width: 163px;
+}
+.inputForm {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: var(--br-5xs);
+  background-color: var(--palettes-midnight-ui-surface);
+  border: 1px solid var(--palettes-midnight-ui-muted);
+  padding: var(--padding-base) var(--padding-mini);
+  /* min-width: 122px; */
+}
+
+.requirements {
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  display: none;
+  min-width: 79px;
+}

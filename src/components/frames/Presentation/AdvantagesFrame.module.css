@@ -1,0 +1,106 @@
+.featureDescription,
+.featureTitle {
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.featureTitle {
+  line-height: 150%;
+  white-space: nowrap;
+}
+
+.featureDescription {
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+  line-height: 160%;
+  font-family: var(--playfair-display-lato-text-sm-font-regular);
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.cardBenefits {
+  width: 333px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  min-width: 272px;
+  max-width: 400px;
+}
+
+/* .cardBenefits:hover {
+  outline: 1px solid #ffffff;
+} */
+
+.advantagesframe,
+.featureGrid {
+  display: flex;
+  justify-content: center;
+}
+
+.featureGrid {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0 var(--padding-xl);
+  gap: 60px 98px;
+  max-width: 1240px;
+  min-height: 503px;
+  text-align: left;
+  font-size: var(--playfair-display-fira-sans-text-lg-font-semibold-size);
+  color: var(--palettes-midnight-text-muted);
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+}
+
+.advantagesframe {
+  align-self: stretch;
+  background-color: var(--palettes-midnight-ui-surface);
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-141xl) var(--padding-base);
+  gap: var(--gap-21xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--playfair-display-fira-sans-text-5xl-font-bold-size);
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-fira-sans-text-5xl-font-bold);
+}
+
+@media screen and (max-width: 1450px) {
+  .featureGrid {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .advantagesframe {
+    padding-top: var(--padding-85xl);
+    padding-bottom: var(--padding-85xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .featureGrid {
+    gap: var(--gap-30xl);
+  }
+  .advantagesframe {
+    gap: var(--gap-xl);
+    padding-top: var(--padding-49xl);
+    padding-bottom: var(--padding-49xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cardBenefits {
+    max-width: 100%;
+  }
+  .featureGrid {
+    gap: var(--gap-6xl);
+  }
+}

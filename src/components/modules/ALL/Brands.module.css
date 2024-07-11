@@ -1,0 +1,29 @@
+.logoIcon {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    min-height: 36px;
+}
+.brandname {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+    min-width: 87px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    width: 137px;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--palettes-midnight-text-default);
+    font-family: var(--playfair-display-source-sans-pro-text-xs-font-semibold);
+}

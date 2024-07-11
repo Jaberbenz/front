@@ -1,0 +1,100 @@
+.textContainer {
+  align-self: stretch;
+  display: flex;
+  max-width: 100%;
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-9xs);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cta {
+  flex: 1;
+  position: relative;
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+  line-height: 160%;
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+  color: var(--palettes-midnight-text-default);
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.button_down {
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  max-width: 100%;
+  cursor: pointer;
+  border: 1px solid var(--palettes-midnight-text-default);
+  padding: var(--padding-xs) var(--padding-lgi);
+  background-color: transparent;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.button_up {
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  max-width: 100%;
+  cursor: pointer;
+  border: 1px solid var(--palettes-midnight-primary-default);
+  padding: var(--padding-xs) var(--padding-lgi);
+  background-color: var(--palettes-midnight-primary-default);
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  object-fit: cover;
+}
+
+.dropdown_down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid var(--palettes-midnight-text-default);
+  padding: var(--padding-xs);
+  background-color: transparent;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+}
+
+.dropdown_up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid var(--palettes-midnight-primary-default);
+  padding: var(--padding-xs);
+  background-color: var(--palettes-midnight-primary-default);
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+}
+
+.dropdownSelect {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--palettes-midnight-text-default);
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+  padding: var(--padding-9xs);
+  outline: none;
+}
+
+.uploadInput {
+  display: none;
+}

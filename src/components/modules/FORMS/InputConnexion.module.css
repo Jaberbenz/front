@@ -1,0 +1,245 @@
+.inputContainerInner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: center;
+  font-size: var(--font-size-5xl);
+  font-family: var(--playfair-display-source-sans-pro-text-xs-font-semibold);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  color: var(--palettes-midnight-ui-mid);
+}
+
+.inputs_form {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  color: var(--palettes-midnight-ui-mid);
+}
+
+.inputsWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs) 0 var(--padding-11xs-5);
+  text-align: center;
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+}
+
+.divider {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--palettes-midnight-ui-mid);
+}
+
+.dividerWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs-5) 0 0;
+  box-sizing: border-box;
+  min-width: 89px;
+}
+
+.or {
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  min-width: 9px;
+}
+
+.dividers {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  color: var(--palettes-midnight-ui-mid);
+}
+
+.byContinuingYou {
+  position: relative;
+  line-height: 160%;
+}
+
+.buttonsWrapper,
+.inputContainer {
+  display: flex;
+  align-items: flex-start;
+}
+.buttonsWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+.inputContainer {
+  width: 344px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  min-width: 344px;
+  max-width: 520px;
+  text-align: left;
+  font-size: var(--playfair-display-fira-sans-text-sm-font-regular-size);
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+}
+
+.logIn {
+  text-decoration: underline;
+}
+.alreadyHaveAnContainer1 {
+  width: 100%;
+}
+.alreadyHaveAnContainer {
+  width: 148px;
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 160%;
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+  color: var(--palettes-midnight-ui-mid);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.cookiePreferences,
+.privacyPolicy,
+.termsOfService {
+  text-decoration: underline;
+}
+.byContinuingYouContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 160%;
+  font-family: var(--playfair-display-fira-sans-text-xs-font-regular);
+  color: var(--palettes-midnight-ui-mid);
+  text-align: center;
+}
+
+.notYou,
+.weSentA {
+  margin: 0;
+}
+.notYou {
+  text-decoration: underline;
+}
+.weSentAContainer1 {
+  width: 100%;
+}
+.weSentAContainer {
+  position: relative;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.passwordRequirements1 {
+  margin: 0;
+}
+.mustBeA,
+.mustContainLetters {
+  margin-bottom: 0;
+}
+.mustBeAMinimumOf12Charac {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-smi);
+}
+.passwordRequirementsMustContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 160%;
+  text-align: left;
+}
+
+.circle,
+.switch {
+  border-radius: var(--br-21xl);
+}
+.circle {
+  height: 12px;
+  width: 12px;
+  position: relative;
+  background-color: var(--palettes-midnight-ui-surface);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.switch {
+  height: 16px;
+  width: 26px;
+  background-color: var(--palettes-midnight-ui-faint);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-xs) var(--padding-11xs)
+    var(--padding-11xs);
+  box-sizing: border-box;
+}
+.iWouldLike {
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  min-width: 174px;
+}
+.newsletter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.inputs1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-direction: column;
+  font-size: var(--font-size-3xs);
+}
+
+@media screen and (max-width: 1525px) {
+  .inputContainer {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .or {
+    width: 100%;
+    height: 9px;
+  }
+  .divider {
+    flex-wrap: wrap;
+  }
+  .inputContainer {
+    max-width: 100%;
+  }
+}

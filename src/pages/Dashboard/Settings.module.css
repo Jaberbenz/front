@@ -1,0 +1,97 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--palettes-midnight-ui-surface);
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  box-sizing: border-box;
+  align-self: stretch;
+  padding: 5% 10%;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.serviceParent,
+.settings {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.serviceParent {
+  flex: 1;
+  flex-direction: column;
+  max-width: calc(100% - 250px); /* Adjust width to account for sidebar */
+  height: 100vh; /* Ensure full height */
+}
+
+.settings {
+  width: 100%;
+  position: relative;
+  background-color: var(--palettes-midnight-ui-surface);
+  flex-direction: row;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.unionIcon {
+  width: 40px; /* Adjust icon size */
+  height: 10px;
+  position: relative;
+  object-fit: contain;
+}
+
+.arrow {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--padding-6xs) var(--padding-3xs);
+}
+
+.cardStg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* Space between content and arrow */
+  padding: 8px 16px; /* Smaller padding for smaller button size */
+  width: 60%; /* Smaller width */
+  background-color: var(--palettes-midnight-ui-surface);
+  border: 1px solid var(--palettes-midnight-ui-muted);
+  border-radius: var(--br-base);
+  margin-bottom: 8px; /* Space between cards */
+  cursor: pointer;
+  color: var(--palettes-midnight-text-default);
+  text-align: left;
+  font-size: 1rem; /* Smaller font size */
+}
+
+.cardsGrid,
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardsGrid {
+  align-self: stretch;
+  align-items: center; /* Center the cards */
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-md); /* Adjust gap for smaller cards */
+  max-width: 100%;
+}
+
+.content {
+  width: 100%;
+  align-items: center;
+  gap: var(--gap-base);
+  max-width: 1440px;
+  text-align: center;
+  font-size: 1.5rem; /* Smaller heading font size */
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-fira-sans-text-5xl-font-bold);
+  margin-bottom: 20px; /* Space below the heading */
+}

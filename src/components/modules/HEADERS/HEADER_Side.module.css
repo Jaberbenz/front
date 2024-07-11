@@ -1,0 +1,108 @@
+.header {
+  background-color: var(--palettes-midnight-ui-surface);
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: var(--padding-13xl);
+  gap: 100px;
+  height: 100vh;
+}
+
+.header,
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 200px;
+  margin: 0;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: 1.25rem;
+  font-size: var(--playfair-display-fira-sans-text-sm-font-semibold-size);
+  color: var(--palettes-midnight-text-default);
+  font-family: var(--playfair-display-source-sans-pro-text-xs-font-semibold);
+  border-right: 2px solid white;
+  padding-left: 30px;
+}
+
+.logoIcon {
+  height: 36px;
+  width: 36px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.brandname {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 60px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 11px;
+  gap: 6px;
+}
+
+.navLabel {
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  min-width: 36px;
+}
+
+.navlink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base);
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px; /* Increase padding to position sub-items further to the right */
+  max-height: 0; /* Initially hidden */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in; /* Smooth transition for showing submenu */
+}
+
+.submenuExpanded {
+  max-height: 500px; /* Maximum height for expanded submenu, adjust as needed */
+  transition: max-height 1s ease-out; /* Slow transition for hiding submenu */
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    display: none;
+    padding-top: var(--padding-2xl);
+    padding-bottom: var(--padding-2xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .header,
+  .serviceframe {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
